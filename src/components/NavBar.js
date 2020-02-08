@@ -19,7 +19,12 @@ const pages =
     {
         title:"Contact",
         path:"/contact"
+    },
+    {
+        title:"Test",
+        path:"/test"
     }
+    
 ]
 
 
