@@ -7,7 +7,7 @@ const Section = (props) => {
    console.log(props)
     
     return (
-    <StyledSection {...props} >
+    <StyledSection {...props} className="StyleSection">
         <StyledFlexBox>
         {props.children}
         </StyledFlexBox>

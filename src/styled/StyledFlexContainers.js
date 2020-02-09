@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { gradients } from './gradients/gradients'
+
 
 export const StyledSection = styled.section`
 
@@ -10,6 +10,7 @@ export const StyledSection = styled.section`
     width:100vw;
     padding:0;
     margin:0;
+    background-image: ${props => props.backgroundImage ? props.backgroundImage : 'none'}
 
 `
 

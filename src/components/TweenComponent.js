@@ -26,16 +26,17 @@ const TweenComponent = (props) =>
 {
   
       return(
-        
+    
       <Controller className="Controller">
         <Scene
-        //   className="TweenComponent"
-        //   indicators={true} 
-        //   duration={'300%'}
-        //   pin={true}
-        //   triggerHook={0} 
+         
+          indicators={true} 
+          duration={1000}
+          pin="#trigger"
+          triggerHook={0} 
+          triggerElement="#trigger"
         >
-          <Timeline wrapper={<StyledFlexBox id="trigger" justify="space-around" direction="row" />}>
+          <Timeline wrapper={<StyledFlexBox  className="TweenComponent" justify="space-around" direction="row" />}>
               
             <Tween
             staggerFrom={{
@@ -46,7 +47,7 @@ const TweenComponent = (props) =>
               opacity:1,
               y:0
             }}
-            stagger={0.15}
+            stagger={0.25}
             >
             {
                 services.map((service, i) =>
